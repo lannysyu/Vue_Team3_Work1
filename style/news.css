@@ -1,0 +1,572 @@
+/* body */
+body {
+    text-align: left;
+    min-width: 300px;
+}
+
+header {
+    min-width: 300px;
+    overflow: hidden;
+}
+
+/* header_pic */
+.header_pic .title p {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: start;
+    margin-left: 70px;
+}
+
+.header_pic .title a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 35px;
+    padding: 12px 25px;
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 70px;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 40px;
+    width: 110px;
+}
+
+.header_pic .title a i {
+    padding-left: 10px;
+}
+
+.header_pic .title a:hover {
+    background-color: #0BC6D6;
+    border: 2px solid #0BC6D6;
+}
+
+/* lastest */
+.latest {
+    width: 100%;
+    margin: auto;
+}
+
+.latest .title {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.latest .title h3 {
+    font-size: 18px;
+}
+
+.latest .title .line {
+    border-top: 1px solid #33333330;
+    height: 1px;
+    width: 72%;
+    margin-left: auto;
+    display: none;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.latest {
+    padding-top: 80px;
+}
+
+.latest .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.latest .content .main>img {
+    width: 100%;
+}
+
+.latest .content a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.latest .content .main .control .label {
+    position: relative;
+}
+
+.latest .content .main .control .label p {
+    color: #ffffff;
+    background-color: #EDD523;
+    display: inline-block;
+    padding: 4px 20px;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+}
+
+.latest .content .main .control .label img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 200px;
+}
+
+.latest .content .main {
+    font-size: 0px;
+    margin: 20px 30px;
+    padding: 20px;
+    border: 1px solid #33333330;
+    border-radius: 5px;
+}
+
+.text p {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    position: relative;
+    color: #333333;
+    display: none;
+}
+
+.text h4 {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.latest .content .main .text {
+    position: relative;
+    padding-left: 20px;
+}
+
+.latest .content .main .text .control {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    display: none;
+}
+
+.latest .content .second {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.latest .content .second .small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #33333330;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    width: 70%;
+}
+
+.latest .content .second .small .text .system {
+    border: 1px solid #EDD523;
+    display: inline-block;
+    padding: 2px 20px;
+}
+
+.latest .content .second .small .pic {
+    font-size: 0px;
+    overflow: hidden;
+}
+
+.latest .content .second .small .pic img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.latest .content .second .small .text {
+    width: 100%;
+}
+
+/* conservation */
+.conservation {
+    margin: auto;
+    padding-top: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.conservation .title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conservation .title .line {
+    border-top: 1px solid #33333330;
+    height: 1px;
+    width: 57%;
+    display: none;
+}
+
+.conservation .title a {
+    text-decoration: none;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    color: #333333;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.conservation .title h3 {
+    margin-right: 18px;
+    line-height: 30px;
+}
+
+.conservation .content {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 10px;
+    margin: 0 30px;
+    width: 100%;
+}
+
+.conservation .content .part {
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.conservation .content .part .pic {
+    font-size: 0px;
+    width: 100%;
+}
+
+.conservation .content .part .text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* travel */
+.travel {
+    padding: 80px 0 80px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.travel .title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel .title .line {
+    border-top: 1px solid #33333330;
+    height: 1px;
+    width: 57%;
+    display: none;
+}
+
+.travel .title a {
+    text-decoration: none;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    color: #333333;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.travel .title h3 {
+    margin-right: 18px;
+}
+
+.travel .content {
+    display: flex;
+    margin: 0 30px;
+    gap: 10px;
+    width: 100%;
+}
+
+.travel .content .part {
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.travel .content .part .pic {
+    font-size: 0px;
+}
+
+.travel .content .part .pic img {
+    width: 100%;
+}
+
+.travel .content .part .text {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+}
+
+@media screen and (min-width: 330px) {
+
+    .header_pic .title h1,
+    .header_pic .title h2,
+    .header_pic .title h3 {
+        margin-left: 90px;
+    }
+
+    .header_pic .title p {
+        margin-left: 90px;
+    }
+
+    .header_pic .title a {
+        margin-left: 90px;
+        /* padding: 15px 30px;
+        font-size: 14px;
+        width: 130px; */
+    }
+
+    .latest .title h3,
+    .conservation .title h3,
+    .travel .title h3 {
+        font-size: 20px;
+        line-height: 48px;
+    }
+
+    .latest .content .main .text .control {
+        display: block;
+    }
+
+    .latest .content .second .small {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /* conservation */
+    .conservation .title a {
+        width: 115px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* travel */
+    .travel .title a {
+        width: 115px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* latest */
+    .latest {
+        width: 1200px;
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    .latest .content {
+        flex-direction: row;
+        margin: 20px 30px;
+    }
+
+    .latest .content .main .control .label p {
+        padding: 8px 20px;
+    }
+
+    .latest .content .main {
+        border: 1px solid transparent;
+        padding: 12px;
+        margin: 0px;
+    }
+
+    .text p {
+        display: block;
+    }
+
+    .text h4 {
+        padding-top: 15px;
+    }
+
+    .latest .content .main .text .control {
+        top: -25px;
+    }
+
+    .latest .content .second {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        overflow: visible;
+        width: 50%;
+    }
+
+    .latest .content .second .small {
+        border: 1px solid transparent;
+        padding: 12px;
+    }
+
+    .latest .content .second .small .pic {
+        width: 50%;
+    }
+
+    .latest .content .second .small .pic img {
+        width: 100%;
+    }
+
+    .latest .content .second .small .text {
+        margin-right: auto;
+    }
+
+    .latest .content .second .small:hover {
+        border: 1px solid #33333310;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #33333310;
+    }
+
+    .latest .content .second .small:hover .system {
+        background-color: #EDD523;
+        color: #ffffff;
+    }
+
+    .latest .content .main:hover {
+        background-color: #33333310;
+        border: 1px solid #33333310;
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+    /* conservation */
+    .conservation {
+        max-width: 1330px;
+        padding-top: 150px;
+    }
+
+    .conservation .title a i {
+        padding-left: 10px;
+    }
+
+    .conservation .title a i:hover {
+        padding-left: 10px;
+        color: #333333;
+    }
+
+    .conservation .title a::after {
+        content: " ";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #333333;
+        transition: .4s .2s;
+    }
+
+    .conservation .title a:hover::after {
+        width: 100%;
+    }
+
+    .conservation .content .part {
+        padding: 12px;
+    }
+
+    .conservation .content .part:hover {
+        background-color: #33333310;
+        border: 1px solid #33333310;
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+    /* travel */
+    .travel {
+        max-width: 1330px;
+        margin: auto;
+        padding: 150px 0 100px 0;
+    }
+
+    .travel .title a i {
+        padding-left: 10px;
+    }
+
+    .travel .title a i:hover {
+        padding-left: 10px;
+        color: #333333;
+    }
+
+    .travel .title a::after {
+        content: " ";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #333333;
+        transition: .4s .2s;
+    }
+
+    .travel .title a:hover::after {
+        width: 100%;
+    }
+
+    .travel .title a i {
+        padding-left: 10px;
+    }
+
+    .travel .content .part {
+        padding: 12px;
+    }
+
+    .travel .content .part:hover {
+        background-color: #33333310;
+        border: 1px solid #33333310;
+        padding: 12px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .latest {
+        max-width: 1330px;
+    }
+
+    .conservation {
+        max-width: 1330px;
+        margin: auto;
+        padding-top: 150px;
+        justify-content: space-between;
+    }
+
+    .travel {
+        max-width: 1330px;
+        margin: auto;
+        padding: 150px 0 100px 0;
+    }
+}

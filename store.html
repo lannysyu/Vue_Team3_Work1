@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV.ING</title>
+    <script src="https://kit.fontawesome.com/0daa1b3f45.js" crossorigin="anonymous"></script>
+    <script src="./js/other.js"></script>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/nav&header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/store.css">
+
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="menu-switch">
+        <nav class="header_nav" id="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./logo/logo_black.svg" alt="div.ing_logo"></a>
+            </div>
+            <!-- hb-label -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- main_nav -->
+            <div class="main_nav">
+                <div class="search">
+                    <div class="bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="input" type="search" placeholder="">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <ul>
+                        <a href="taiwan.html">
+                            <h5>環台潛點</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="news.html">
+                            <h5>最新消息</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="store.html">
+                            <h5>尋找潛店</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="padi.html">
+                            <h5>PADI潛水</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="gallery.html">
+                            <h5>攝影相冊</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <div class="wrap_box">
+                            <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                            <div class="language_item">
+                                <a href="#" class="ch">Chinese</a>
+                                <a href="#" class="en">English</a>
+                                <a href="#" class="ja">Japanese</a>
+                            </div>
+                        </div>
+                        <a class="member" href="member.html"><i class="fa-solid fa-circle-user"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header_pic">
+            <div class="pic">
+                <img src="./pic/store/store_header_pic.png" alt="pic_header">
+            </div>
+            <div class="title">
+                <h2>尋找適合你的潛店</h2>
+                <h3>FIND THE SHOP</h3>
+                <input class="search" type="search" placeholder="輸入您的目的地">
+                <a href="#">SEARCH
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <div class="box">
+                <div class="wrap_text">
+                    <div class="text">
+                        <p>入住日<span>ARRIVAL</span></p>
+                        <input type="date" name="arrival date" id="arrival">
+                    </div>
+                    <div class="text">
+                        <p>退房日<span>DEPARTURE</span></p>
+                        <input type="date" name="departure date" id="departure">
+                    </div>
+                </div>
+                <div class="wrap_box">
+                    <div class="wrap">
+                        <div class="text">
+                            <p>成人<span>ADULTS</span></p>
+                            <input type="number" name="adults" id="adults">
+                        </div>
+                        <div class="text">
+                            <p>孩童<span>CHILDREN</span></p>
+                            <input type="number" name="children" id="children">
+                        </div>
+                    </div>
+                    <div class="check">
+                        <a href="#">搜尋CHECK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <section class="left">
+                <aside>
+                    <div class="type bottom_line">
+                        <p class="title">地區</p>
+                        <div class="wrap">
+                            <div class="item">
+                                <input type="checkbox" id="taipei" name=taipei">
+                                <label for="taipei">台北</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="newtaipei" name=newtaipei">
+                                <label for="newtaipei">新北</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="kaohsiung" name=kaohsiung">
+                                <label for="kaohsiung">高雄</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="pingtung" name=pingtung">
+                                <label for="pingtung">屏東</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="taitung" name=taitung">
+                                <label for="taitung">台東</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type bottom_line">
+                        <p class="title">服務</p>
+                        <div class="wrap">
+                            <div class="item">
+                                <input type="checkbox" id="room" name="room">
+                                <label for="room">住宿</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="teach" name="teach">
+                                <label for="teach">教學</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="lease" name="lease">
+                                <label for="lease">租借</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <p class="title">品牌</p>
+                        <div class="wrap">
+                            <div class="item">
+                                <input type="checkbox" id="taiwan_diving" name="taiwan_diving">
+                                <label for="taiwan_diving">台灣潛水</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="of_course" name="of_course">
+                                <label for="of_course">歐夫寇斯</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="to_diving" name="to_diving">
+                                <label for="to_diving">鬥陣潛水</label>
+                            </div>
+                        </div>
+                </aside>
+            </section>
+            <section class="right">
+                <div class="box">
+                    <div>
+                        <img class="store_pic" src="./pic/store/store_content_pic (1).png" alt="of_course store">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>龍洞潛水旅宿中心 | 歐夫寇斯</h3>
+                            <p class="introduce">龍洞灣唯一觀光局認證合法民宿，集結我們在世界探索旅遊的經歷親手設計規劃，為冒險而打造生全面照顧夥伴們的探險生活需求打造屬於冒險者的溫馨庇護所。
+                            </p>
+                            <p class="location">新北市｜貢寮區</p>
+                            <div class="label">
+                                <p class="r">住宿</p>
+                                <p class="t">教學</p>
+                                <p class="l">租借</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div class="button">
+                                <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                            </div>
+                            <div class="reserve">
+                                <a href="https://www.ofucos.com/aboutus/" target="_blank">立刻預定
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img class="store_pic " src="./pic/store/store_content_pic (3).png" alt="of_course store">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>半島海人 Beyond The Surface</h3>
+                            <p class="introduce">半島海人，緣起於對海洋的熱愛與執著，試圖在這片大海、山脈與生活之間找到平衡，我們熱愛分享恆春半島最不為人知的美麗風貌...</p>
+                            <p class="location">屏東縣｜恆春鎮</p>
+                            <div class="label">
+                                <p class="r">住宿</p>
+                                <p class="t">教學</p>
+                                <p class="l">租借</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div class="button">
+                                <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                            </div>
+                            <div class="reserve">
+                                <a href="http://www.btsdiving.com/" target="_blank">立刻預定
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img class="store_pic" src="./pic/store/store_content_pic (2).png" alt="of_course store">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>小琉球綠蠵龜潛水</h3>
+                            <p class="introduce">小琉球綠蠵龜潛水住宿特邀你一起徜徉海裡與綠蠵龜同游，遊玩之餘也別忘了一起保育可愛海龜，愛牠就別傷害他，一起為這海洋生態盡一份心力吧。</p>
+                            <p class="location">屏東縣｜琉球鄉</p>
+                            <div class="label">
+                                <p class="r">住宿</p>
+                                <p class="t">教學</p>
+                                <p class="l">租借</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div class="button">
+                                <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                            </div>
+                            <div class="reserve">
+                                <a href="http://www.g-s-t.tw/" target="_blank">立刻預定
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img class="store_pic" src="./pic/store/store_content_pic (4).png" alt="of_course store">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>台灣潛水 綠島店</h3>
+                            <p class="introduce">親海、知海、愛海，是上天賦予海島國家重要的使命。無論是提供專業的潛水相關課程，海洋商品的販售，保育活動的推廣。</p>
+                            <p class="location">台東縣｜綠島鄉</p>
+                            <div class="label">
+                                <!-- <p class="r">住宿</p> -->
+                                <p class="t">教學</p>
+                                <p class="l">租借</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div class="button">
+                                <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                            </div>
+                            <div class="reserve">
+                                <a href="https://www.taiwan-dive.com/" target="_blank">立刻預定
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img class="store_pic" src="./pic/store/store_content_pic (5).png" alt="of_course store">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>CTDiver</h3>
+                            <p class="introduce">CTdiver是位於台灣墾丁的PADI
+                                潛水中心(S-27268)，連續多年獲得TripAdvisor推薦優選潛店，2008-2022年更獲取旅行者之選。</p>
+                            <p class="location">屏東縣｜恆春鎮</p>
+                            <div class="label">
+                                <p class="r">住宿</p>
+                                <p class="t">教學</p>
+                                <p class="l">租借</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div class="button">
+                                <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                            </div>
+                            <div class="reserve">
+                                <a href="https://www.ctdiver.com/" target="_blank">立刻預定
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img class="store_pic" src="./pic/store/store_content_pic (6).png" alt="of_course store">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>東北角潛水客棧</h3>
+                            <p class="introduce">20多年前有幾位潛水痴總覺得在東北角潛水有諸多不便，因此在東北角龍洞灣旁成立了東北角潛水客棧。</p>
+                            <p class="location">新北市｜貢寮區</p>
+                            <div class="label">
+                                <p class="r">住宿</p>
+                                <p class="t">教學</p>
+                                <p class="l">租借</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div class="button">
+                                <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                            </div>
+                            <div class="reserve">
+                                <a href="https://inn.divers.com.tw/" target="_blank">立刻預定
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="page">
+            <a class="arrow" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="number" href="#"><i class="fa-solid fa-1"></i></a>
+            <a class="number" href="#"><i class="fa-solid fa-2"></i></a>
+            <a class="number" href="#"><i class="fa-solid fa-3"></i></a>
+            <a class="arrow" href="#"><i class="fa-solid fa-angle-right"></i></a>
+        </footer>
+    </main>
+    <footer class="footer">
+        <div class="footer_text">
+            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
+                &copy;2023 div.ing All rights reserved.</p>
+        </div>
+        <div class="footer_connect">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footer_sub">
+            <i class="fa-solid fa-envelope"></i>
+            <input class="input" type="email" placeholder="請輸入您的電子信箱">
+            <a href="#">
+                <p class="footer_p">訂閱</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.title,
+.pic_small {
+    font-size: 0px;
+}
+
+.pic {
+    position: relative;
+}
+
+.pic p,
+h3 {
+    color: #333333;
+}
+
+.pic p {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    text-align: left;
+}
+
+.pic .text {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+/* 我的景點 */
+.favorite {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .box {
+    display: flex;
+    gap: 27px;
+    margin-left: 100px;
+}
+
+.content .box .inter {
+    position: relative;
+}
+
+.content .box .inter button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 0px;
+}
+
+.content .box .inter button:hover {
+    background-image: url(./icon/store_like_icon_hover.svg);
+}
+
+.content .box .inter button:focus {
+    background-image: url(./icon/store_like_icon_active.svg);
+}
+
+.content .box .inter .my {
+    text-decoration: none;
+}
+
+.content .box .inter .my .pic_small {
+    overflow: hidden;
+}
+
+.content .box .inter:hover .my p {
+    color: #33333380;
+}
+
+.content .box .inter .my p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #333333;
+    padding: 20px 5px 0 5px;
+    width: 243px;
+}
+
+.content .box .inter .my .text {
+    word-wrap: break-word;
+    display: block;
+}
+
+.content .more {
+    margin-top: auto;
+}
+
+.more,
+.submit {
+    padding-top: 20px;
+    text-align: end;
+}
+
+.more a,
+.submit a {
+    text-decoration: none;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    display: inline-block;
+    color: #333333;
+    /* border-bottom: 2px solid transparent; */
+}
+
+.more a::after,
+.submit a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .4s .2s;
+}
+
+.more a:hover::after,
+.submit a:hover::after {
+    width: 100%;
+}
+
+/* NOTE a底線 從左跑到右的方法 */
+
+.more a i,
+.submit a i {
+    padding-left: 10px;
+}
+
+/* 協助中心 */
+.assist {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.assist .question {
+    width: 915px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.assist .question .list {
+    display: flex;
+    border: 1px solid #BDBDBD80;
+}
+
+.assist .question .list .text {
+    display: none;
+}
+
+.assist .question .list button {
+    display: flex;
+    width: 100%;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.assist .question .list button:hover {
+    background-color: #BDBDBD20;
+}
+
+.assist .question .list button p {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    display: block;
+    padding: 15px 20px;
+}
+
+.assist .question .list button .plus {
+    padding: 20px;
+}
+
+.assist .question .more {
+    margin-top: auto;
+}
+
+/* 聯繫我們 */
+.contact {
+    display: flex;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: auto;
+    width: 810px;
+}
+
+.contact .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact .social .a {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    align-items: center;
+    height: 62px;
+    width: 100px;
+}
+
+.contact .social .a:hover p {
+    display: block;
+}
+
+.contact .social .a p {
+    padding: 5px 8px;
+    border-bottom: 1px solid #BDBDBD90;
+    text-align: center;
+    display: none;
+}
+
+.contact .social .a i {
+    font-size: 20px;
+    color: #333333;
+    height: 22px;
+    width: 22px;
+}
+
+.contact .message {
+    width: 100%;
+}
+
+.contact .message form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .message label {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-align: left;
+    padding: 0 10px 10px 10px;
+    display: inline-block;
+}
+
+.contact .message label span {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-align: left;
+    padding-left: 5px;
+    color: #33333380;
+}
+
+.contact .message .name {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.contact .message .name div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .message .email {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.contact .message .leave {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.contact .message .submit {
+    margin-top: auto;
+}
+
+input#last,
+input#first {
+    padding: 14px;
+    outline: none;
+    background-color: #BDBDBD40;
+    border: none;
+}
+
+input#email {
+    padding: 14px;
+    outline: none;
+    background-color: #BDBDBD40;
+    border: none;
+}
+
+textarea#message {
+    padding: 14px;
+    outline: none;
+    background-color: #BDBDBD40;
+    border: none;
+    max-width: 782px;
+}
+
+input#last::placeholder,
+input#first::placeholder,
+input#email::placeholder,
+textarea#message::placeholder {
+    color: #BDBDBD90
+}
+
+input#last:hover,
+input#first:hover,
+input#email:hover,
+textarea#message:hover {
+    background-color: #BDBDBD65;
+}
