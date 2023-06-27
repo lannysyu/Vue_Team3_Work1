@@ -162,20 +162,20 @@
                     </aside>
                 </section>
                 <section class="right">
-                    <div class="box">
+                    <div class="box" v-for="item in [...box]" :key="item.key">
                         <div>
-                            <img class="store_pic" src="./pic/store/store_content_pic (1).png" alt="of_course store">
+                            <img class="store_pic" :src="item.src" alt="of_course store">
                         </div>
                         <div class="text">
                             <div class="name">
-                                <h3>龍洞潛水旅宿中心 | 歐夫寇斯</h3>
-                                <p class="introduce">龍洞灣唯一觀光局認證合法民宿，集結我們在世界探索旅遊的經歷親手設計規劃，為冒險而打造生全面照顧夥伴們的探險生活需求打造屬於冒險者的溫馨庇護所。
+                                <h3>{{item.h3}}</h3>
+                                <p class="introduce">{{item.introduce}}
                                 </p>
-                                <p class="location">新北市｜貢寮區</p>
+                                <p class="location">{{item.location}}</p>
                                 <div class="label">
-                                    <p class="r">住宿</p>
-                                    <p class="t">教學</p>
-                                    <p class="l">租借</p>
+                                    <p :class="item.class">{{item.p1}}</p>
+                                    <p class="t">{{item.p2}}</p>
+                                    <p class="l">{{item.p3}}</p>
                                 </div>
                             </div>
                             <div class="like">
@@ -184,142 +184,6 @@
                                 </div>
                                 <div class="reserve">
                                     <a href="https://www.ofucos.com/aboutus/" target="_blank">立刻預定
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img class="store_pic " src="./pic/store/store_content_pic (3).png" alt="of_course store">
-                        </div>
-                        <div class="text">
-                            <div class="name">
-                                <h3>半島海人 Beyond The Surface</h3>
-                                <p class="introduce">半島海人，緣起於對海洋的熱愛與執著，試圖在這片大海、山脈與生活之間找到平衡，我們熱愛分享恆春半島最不為人知的美麗風貌...</p>
-                                <p class="location">屏東縣｜恆春鎮</p>
-                                <div class="label">
-                                    <p class="r">住宿</p>
-                                    <p class="t">教學</p>
-                                    <p class="l">租借</p>
-                                </div>
-                            </div>
-                            <div class="like">
-                                <div class="button">
-                                    <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
-                                </div>
-                                <div class="reserve">
-                                    <a href="http://www.btsdiving.com/" target="_blank">立刻預定
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img class="store_pic" src="./pic/store/store_content_pic (2).png" alt="of_course store">
-                        </div>
-                        <div class="text">
-                            <div class="name">
-                                <h3>小琉球綠蠵龜潛水</h3>
-                                <p class="introduce">小琉球綠蠵龜潛水住宿特邀你一起徜徉海裡與綠蠵龜同游，遊玩之餘也別忘了一起保育可愛海龜，愛牠就別傷害他，一起為這海洋生態盡一份心力吧。</p>
-                                <p class="location">屏東縣｜琉球鄉</p>
-                                <div class="label">
-                                    <p class="r">住宿</p>
-                                    <p class="t">教學</p>
-                                    <p class="l">租借</p>
-                                </div>
-                            </div>
-                            <div class="like">
-                                <div class="button">
-                                    <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
-                                </div>
-                                <div class="reserve">
-                                    <a href="http://www.g-s-t.tw/" target="_blank">立刻預定
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img class="store_pic" src="./pic/store/store_content_pic (4).png" alt="of_course store">
-                        </div>
-                        <div class="text">
-                            <div class="name">
-                                <h3>台灣潛水 綠島店</h3>
-                                <p class="introduce">親海、知海、愛海，是上天賦予海島國家重要的使命。無論是提供專業的潛水相關課程，海洋商品的販售，保育活動的推廣。</p>
-                                <p class="location">台東縣｜綠島鄉</p>
-                                <div class="label">
-                                    <!-- <p class="r">住宿</p> -->
-                                    <p class="t">教學</p>
-                                    <p class="l">租借</p>
-                                </div>
-                            </div>
-                            <div class="like">
-                                <div class="button">
-                                    <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
-                                </div>
-                                <div class="reserve">
-                                    <a href="https://www.taiwan-dive.com/" target="_blank">立刻預定
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img class="store_pic" src="./pic/store/store_content_pic (5).png" alt="of_course store">
-                        </div>
-                        <div class="text">
-                            <div class="name">
-                                <h3>CTDiver</h3>
-                                <p class="introduce">CTdiver是位於台灣墾丁的PADI
-                                    潛水中心(S-27268)，連續多年獲得TripAdvisor推薦優選潛店，2008-2022年更獲取旅行者之選。</p>
-                                <p class="location">屏東縣｜恆春鎮</p>
-                                <div class="label">
-                                    <p class="r">住宿</p>
-                                    <p class="t">教學</p>
-                                    <p class="l">租借</p>
-                                </div>
-                            </div>
-                            <div class="like">
-                                <div class="button">
-                                    <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
-                                </div>
-                                <div class="reserve">
-                                    <a href="https://www.ctdiver.com/" target="_blank">立刻預定
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img class="store_pic" src="./pic/store/store_content_pic (6).png" alt="of_course store">
-                        </div>
-                        <div class="text">
-                            <div class="name">
-                                <h3>東北角潛水客棧</h3>
-                                <p class="introduce">20多年前有幾位潛水痴總覺得在東北角潛水有諸多不便，因此在東北角龍洞灣旁成立了東北角潛水客棧。</p>
-                                <p class="location">新北市｜貢寮區</p>
-                                <div class="label">
-                                    <p class="r">住宿</p>
-                                    <p class="t">教學</p>
-                                    <p class="l">租借</p>
-                                </div>
-                            </div>
-                            <div class="like">
-                                <div class="button">
-                                    <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
-                                </div>
-                                <div class="reserve">
-                                    <a href="https://inn.divers.com.tw/" target="_blank">立刻預定
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </a>
                                 </div>
@@ -432,7 +296,70 @@
                         for:'to_diving',
                         project:'鬥陣潛水'
                             },
-                        ]   
+                        ],
+                        box:[
+                            {
+                            src:'./pic/store/store_content_pic (1).png',
+                            h3:'龍洞潛水旅宿中心 | 歐夫寇斯',
+                            introduce:'龍洞灣唯一觀光局認證合法民宿，集結我們在世界探索旅遊的經歷親手設計規劃，為冒險而打造生全面照顧夥伴們的探險生活需求打造屬於冒險者的溫馨庇護所。',
+                            location:'新北市｜貢寮區',
+                            class:'r',
+                            p1:'住宿',
+                            p2:'教學',
+                            p3:'租借'
+                        },
+                        {
+                            src:'./pic/store/store_content_pic (3).png',
+                            h3:'半島海人 Beyond The Surface',
+                            introduce:'半島海人，緣起於對海洋的熱愛與執著，試圖在這片大海、山脈與生活之間找到平衡，我們熱愛分享恆春半島最不為人知的美麗風貌...',
+                            location:'屏東縣｜恆春鎮',
+                            class:'r',
+                            p1:'住宿',
+                            p2:'教學',
+                            p3:'租借'
+                        },
+                        {
+                            src:'./pic/store/store_content_pic (2).png',
+                            h3:'小琉球綠蠵龜潛水',
+                            introduce:'小琉球綠蠵龜潛水住宿特邀你一起徜徉海裡與綠蠵龜同游，遊玩之餘也別忘了一起保育可愛海龜，愛牠就別傷害他，一起為這海洋生態盡一份心力吧。',
+                            location:'屏東縣｜琉球鄉',
+                            class:'r',
+                            p1:'住宿',
+                            p2:'教學',
+                            p3:'租借'
+                        },
+                        {
+                            src:'./pic/store/store_content_pic (4).png',
+                            h3:'台灣潛水 綠島店',
+                            introduce:'親海、知海、愛海，是上天賦予海島國家重要的使命。無論是提供專業的潛水相關課程，海洋商品的販售，保育活動的推廣。',
+                            location:'台東縣｜綠島鄉',
+                            class:'n',
+                            p1:'',
+                            p2:'教學',
+                            p3:'租借'
+                        },
+                        {
+                            src:'./pic/store/store_content_pic (5).png',
+                            h3:'CTDiver',
+                            introduce:`CTdiver是位於台灣墾丁的PADI
+                                    潛水中心(S-27268)，連續多年獲得TripAdvisor推薦優選潛店，2008-2022年更獲取旅行者之選。`,
+                            location:'新北市｜貢寮區',
+                            class:'r',
+                            p1:'住宿',
+                            p2:'教學',
+                            p3:'租借'
+                        },
+                        {
+                            src:'./pic/store/store_content_pic (6).png',
+                            h3:'東北角潛水客棧',
+                            introduce:'20多年前有幾位潛水痴總覺得在東北角潛水有諸多不便，因此在東北角龍洞灣旁成立了東北角潛水客棧。',
+                            location:'新北市｜貢寮區',
+                            class:'r',
+                            p1:'住宿',
+                            p2:'教學',
+                            p3:'租借'
+                        }
+                        ]  
 
 
                         }

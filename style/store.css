@@ -397,7 +397,9 @@ body {
     display: flex;
     gap: 10px;
 }
-
+.content .box .text .name .label .n {
+    display: none;
+}
 .content .box .text .name .label .r {
     padding: 5px 15px;
     background-color: #8D7C00;
