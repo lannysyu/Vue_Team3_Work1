@@ -227,28 +227,24 @@ header {
     transition: top .5s .5s, rotate .5s;
 }
 
-#menu-switch {
-    display: none;
-    opacity: 0;
-}
 
-#menu-switch:checked+.header_nav .main_nav {
+.header_nav.-open .main_nav {
     display: block;
     opacity: 1;
     transition: opacity 2s ease-in-out;
 }
 
-#menu-switch:checked+.header_nav .hb span:nth-child(1) {
+.header_nav.-open .hb span:nth-child(1) {
     top: 18px;
     rotate: 45deg;
     transition: top .5s, rotate .5s .5s;
 }
 
-#menu-switch:checked+.header_nav .hb span:nth-child(2) {
+.header_nav.-open .hb span:nth-child(2) {
     display: none;
 }
 
-#menu-switch:checked+.header_nav .hb span:nth-child(3) {
+.header_nav.-open .hb span:nth-child(3) {
     top: 18px;
     rotate: -45deg;
     transition: top .5s, rotate .5s .5s;

@@ -7,27 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIV.ING</title>
     <script src="https://kit.fontawesome.com/0daa1b3f45.js" crossorigin="anonymous"></script>
-    <script src="./js/other.js"></script>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/nav&header.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/store.css">
-
 </head>
 
-    <body id="app">
+<body>
+    <div id="app">
         <header>
-            <input type="checkbox" name="" id="menu-switch">
-            <nav class="header_nav" id="navbar">
+            <nav class="header_nav" id="navbar" :class="{'-open':isToggleOpen}">
                 <div class="logo">
                     <a href="index.html"><img src="./logo/logo_black.svg" alt="div.ing_logo"></a>
                 </div>
                 <!-- hb-label -->
-                <label for="menu-switch" class="hb">
+                <div for="menu-switch" class="hb" @click="isToggleOpen = !isToggleOpen">
                     <span></span>
                     <span></span>
                     <span></span>
-                </label>
+                </div>
                 <!-- main_nav -->
                 <div class="main_nav">
                     <div class="search">
@@ -133,12 +131,12 @@
                             <p class="title">地區</p>
                             <div class="wrap">
                                 <!-- <div class="item" v-for="item in [...area]" :key="item.index">
-                                    <input type="checkbox" :id="item.id" :name=item.name">
-                                    <label :for="item.for">{{item.county}}</label>
-                                </div> -->
+                                            <input type="checkbox" :id="item.id" :name=item.name">
+                                            <label :for="item.for">{{item.county}}</label>
+                                        </div> -->
                                 <div class="item" v-for="item in [...area]" :key="item.key">
-                                    <input type="checkbox" :id="item.id" :name="item.name">
-                                    <label :for="item.for">{{item.county}}</label>
+                                    <input type="checkbox" :id="item.id" :name="item.id">
+                                    <label :for="item.id">{{item.county}}</label>
                                 </div>
                             </div>
                         </div>
@@ -146,8 +144,8 @@
                             <p class="title">服務</p>
                             <div class="wrap">
                                 <div class="item" v-for="item in [...serve]" :key="item.key">
-                                    <input type="checkbox" :id="item.id" :name="item.name">
-                                    <label :for="item.for">{{item.project}}</label>
+                                    <input type="checkbox" :id="item.id" :name="item.id">
+                                    <label :for="item.id">{{item.project}}</label>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +178,8 @@
                             </div>
                             <div class="like">
                                 <div class="button">
-                                    <button type="button"><img src="./icon/store_like_icon.svg" alt="like_icon"></button>
+                                    <button type="button"><img src="./icon/store_like_icon.svg"
+                                            alt="like_icon"></button>
                                 </div>
                                 <div class="reserve">
                                     <a href="https://www.ofucos.com/aboutus/" target="_blank">立刻預定
@@ -220,154 +219,139 @@
                 </a>
             </div>
         </footer>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script>
-            Vue.createApp({
-                data() {
-                    return {
-                        area:[
-                    {
-                        id:'taipei',
-                        name:'taipei',
-                        for:'taipei',
-                        county:'台北'
-                    },
-                    {
-                        id:'newtaipei',
-                        name:'newtaipei',
-                        for:'newtaipei',
-                        county:'新北'
-                    },
-                    {
-                        id:'kaohsiung',
-                        name:'kaohsiung',
-                        for:'kaohsiung',
-                        county:'高雄'
-                    },
-                    {
-                        id:'pingtung',
-                        name:'pingtung',
-                        for:'pingtung',
-                        county:'屏東'
-                    },
-                    {
-                        id:'taitung',
-                        name:'taitung',
-                        for:'taitung',
-                        county:'台東'
-                    }
-                        ],
-                        serve:[
-                            {
-                                id:'room',
-                        name:'room',
-                        for:'room',
-                        project:'住宿'
-                            },
-                            {
-                                id:'teach',
-                        name:'teach',
-                        for:'teach',
-                        project:'教學'
-                            },
-                            {
-                                id:'lease',
-                        name:'lease',
-                        for:'lease',
-                        project:'租借'
-                            },
-                        ],
-                        brand:[
-                            {
-                                id:'taiwan_diving',
-                        name:'taiwan_diving',
-                        for:'taiwan_diving',
-                        project:'台灣潛水'
-                            },
-                            {
-                                id:'of_course',
-                        name:'of_course',
-                        for:'of_course',
-                        project:'歐夫寇斯'
-                            },
-                            {
-                                id:'to_diving',
-                        name:'to_diving',
-                        for:'to_diving',
-                        project:'鬥陣潛水'
-                            },
-                        ],
-                        box:[
-                            {
-                            src:'./pic/store/store_content_pic (1).png',
-                            h3:'龍洞潛水旅宿中心 | 歐夫寇斯',
-                            introduce:'龍洞灣唯一觀光局認證合法民宿，集結我們在世界探索旅遊的經歷親手設計規劃，為冒險而打造生全面照顧夥伴們的探險生活需求打造屬於冒險者的溫馨庇護所。',
-                            location:'新北市｜貢寮區',
-                            class:'r',
-                            p1:'住宿',
-                            p2:'教學',
-                            p3:'租借'
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/other.js"></script>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    area: [
+                        {
+                            id: 'taipei',
+                            county: '台北'
                         },
                         {
-                            src:'./pic/store/store_content_pic (3).png',
-                            h3:'半島海人 Beyond The Surface',
-                            introduce:'半島海人，緣起於對海洋的熱愛與執著，試圖在這片大海、山脈與生活之間找到平衡，我們熱愛分享恆春半島最不為人知的美麗風貌...',
-                            location:'屏東縣｜恆春鎮',
-                            class:'r',
-                            p1:'住宿',
-                            p2:'教學',
-                            p3:'租借'
+                            id: 'newtaipei',
+                            county: '新北'
                         },
                         {
-                            src:'./pic/store/store_content_pic (2).png',
-                            h3:'小琉球綠蠵龜潛水',
-                            introduce:'小琉球綠蠵龜潛水住宿特邀你一起徜徉海裡與綠蠵龜同游，遊玩之餘也別忘了一起保育可愛海龜，愛牠就別傷害他，一起為這海洋生態盡一份心力吧。',
-                            location:'屏東縣｜琉球鄉',
-                            class:'r',
-                            p1:'住宿',
-                            p2:'教學',
-                            p3:'租借'
+                            id: 'kaohsiung',
+                            county: '高雄'
                         },
                         {
-                            src:'./pic/store/store_content_pic (4).png',
-                            h3:'台灣潛水 綠島店',
-                            introduce:'親海、知海、愛海，是上天賦予海島國家重要的使命。無論是提供專業的潛水相關課程，海洋商品的販售，保育活動的推廣。',
-                            location:'台東縣｜綠島鄉',
-                            class:'n',
-                            p1:'',
-                            p2:'教學',
-                            p3:'租借'
+                            id: 'pingtung',
+                            county: '屏東'
                         },
                         {
-                            src:'./pic/store/store_content_pic (5).png',
-                            h3:'CTDiver',
-                            introduce:`CTdiver是位於台灣墾丁的PADI
+                            id: 'taitung',
+                            county: '台東'
+                        }
+                    ],
+                    serve: [
+                        {
+                            id: 'room',
+                            project: '住宿'
+                        },
+                        {
+                            id: 'teach',
+                            project: '教學'
+                        },
+                        {
+                            id: 'lease',
+                            project: '租借'
+                        },
+                    ],
+                    brand: [
+                        {
+                            id: 'taiwan_diving',
+                            name: 'taiwan_diving',
+                            for: 'taiwan_diving',
+                            project: '台灣潛水'
+                        },
+                        {
+                            id: 'of_course',
+                            name: 'of_course',
+                            for: 'of_course',
+                            project: '歐夫寇斯'
+                        },
+                        {
+                            id: 'to_diving',
+                            name: 'to_diving',
+                            for: 'to_diving',
+                            project: '鬥陣潛水'
+                        },
+                    ],
+                    box: [
+                        {
+                            src: './pic/store/store_content_pic (1).png',
+                            h3: '龍洞潛水旅宿中心 | 歐夫寇斯',
+                            introduce: '龍洞灣唯一觀光局認證合法民宿，集結我們在世界探索旅遊的經歷親手設計規劃，為冒險而打造生全面照顧夥伴們的探險生活需求打造屬於冒險者的溫馨庇護所。',
+                            location: '新北市｜貢寮區',
+                            class: 'r',
+                            p1: '住宿',
+                            p2: '教學',
+                            p3: '租借'
+                        },
+                        {
+                            src: './pic/store/store_content_pic (3).png',
+                            h3: '半島海人 Beyond The Surface',
+                            introduce: '半島海人，緣起於對海洋的熱愛與執著，試圖在這片大海、山脈與生活之間找到平衡，我們熱愛分享恆春半島最不為人知的美麗風貌...',
+                            location: '屏東縣｜恆春鎮',
+                            class: 'r',
+                            p1: '住宿',
+                            p2: '教學',
+                            p3: '租借'
+                        },
+                        {
+                            src: './pic/store/store_content_pic (2).png',
+                            h3: '小琉球綠蠵龜潛水',
+                            introduce: '小琉球綠蠵龜潛水住宿特邀你一起徜徉海裡與綠蠵龜同游，遊玩之餘也別忘了一起保育可愛海龜，愛牠就別傷害他，一起為這海洋生態盡一份心力吧。',
+                            location: '屏東縣｜琉球鄉',
+                            class: 'r',
+                            p1: '住宿',
+                            p2: '教學',
+                            p3: '租借'
+                        },
+                        {
+                            src: './pic/store/store_content_pic (4).png',
+                            h3: '台灣潛水 綠島店',
+                            introduce: '親海、知海、愛海，是上天賦予海島國家重要的使命。無論是提供專業的潛水相關課程，海洋商品的販售，保育活動的推廣。',
+                            location: '台東縣｜綠島鄉',
+                            class: 'n',
+                            p1: '',
+                            p2: '教學',
+                            p3: '租借'
+                        },
+                        {
+                            src: './pic/store/store_content_pic (5).png',
+                            h3: 'CTDiver',
+                            introduce: `CTdiver是位於台灣墾丁的PADI
                                     潛水中心(S-27268)，連續多年獲得TripAdvisor推薦優選潛店，2008-2022年更獲取旅行者之選。`,
-                            location:'新北市｜貢寮區',
-                            class:'r',
-                            p1:'住宿',
-                            p2:'教學',
-                            p3:'租借'
+                            location: '新北市｜貢寮區',
+                            class: 'r',
+                            p1: '住宿',
+                            p2: '教學',
+                            p3: '租借'
                         },
                         {
-                            src:'./pic/store/store_content_pic (6).png',
-                            h3:'東北角潛水客棧',
-                            introduce:'20多年前有幾位潛水痴總覺得在東北角潛水有諸多不便，因此在東北角龍洞灣旁成立了東北角潛水客棧。',
-                            location:'新北市｜貢寮區',
-                            class:'r',
-                            p1:'住宿',
-                            p2:'教學',
-                            p3:'租借'
+                            src: './pic/store/store_content_pic (6).png',
+                            h3: '東北角潛水客棧',
+                            introduce: '20多年前有幾位潛水痴總覺得在東北角潛水有諸多不便，因此在東北角龍洞灣旁成立了東北角潛水客棧。',
+                            location: '新北市｜貢寮區',
+                            class: 'r',
+                            p1: '住宿',
+                            p2: '教學',
+                            p3: '租借'
                         }
-                        ]  
-
-
-                        }
-                    }
+                    ],
+                    isToggleOpen: false,
                 }
-            ).mount('#app')
-        </script>
-    </body>
+            }
+        }
+        ).mount('#app')
+    </script>
+</body>
 
 
 
